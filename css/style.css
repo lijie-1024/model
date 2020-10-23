@@ -46,7 +46,7 @@ ul {
   padding: 1rem 2.5rem;
   min-height: 100vh;
   background-size: contain;
-  padding-bottom: 13rem;
+  padding-bottom: 10%;
   margin: 0 auto;
 }
 .vcoser .logoBox {
@@ -64,6 +64,11 @@ ul {
   width: 30.25rem;
   height: 24.375rem;
   margin: 3rem auto 2rem;
+  /* position: relative;
+  width: 28.25rem;
+  height: 22.375rem;
+  margin: 3rem auto;
+  box-sizing: border-box; */
 }
 .vcoser #videoShow {
   width: 100%;
@@ -85,7 +90,7 @@ ul {
 }
 .vcoser .cont1 {
   display: flex;
-  padding: 5%;
+  padding: 2% 5%;
 }
 .vcoser .cont1 p,
 .vcoser .cont2-right p {
@@ -162,7 +167,7 @@ ul {
   background-size: contain;
   /* margin: 7.5625rem auto 0; */
   position: relative;
-  bottom: -2.4375rem;
+  bottom: -2rem;
   left: 28%;
 }
 
