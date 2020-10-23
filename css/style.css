@@ -184,9 +184,13 @@ ul {
   background: url(../images/now.png) no-repeat;
   background-size: contain;
   /* margin: 7.5625rem auto 0; */
-  position: relative;
+  /* position: relative;
   bottom: -6vh;
-  left: 28%;
+  left: 28%; */
+
+  margin: 0 auto;
+  position: relative;
+  top: 4rem;
 }
 
 .userImg {
