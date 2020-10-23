@@ -85,7 +85,7 @@ ul {
 }
 .vcoser .cont1 {
   display: flex;
-  padding: 3rem 3.125rem 1.875rem;
+  padding: 5%;
 }
 .vcoser .cont1 p,
 .vcoser .cont2-right p {
@@ -114,7 +114,7 @@ ul {
 
 .vcoser .cont2 {
   display: flex;
-  padding: 0 3.125rem;
+  padding: 0 5%;
 }
 .vcoser .cont2-right .cont2-userBox {
   background: url(../images/img2.png) no-repeat;
