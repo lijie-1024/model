@@ -1,135 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vcoser</title>
-    <link rel="stylesheet" href="css/jsmodern.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <section class="vcoser">
-      <div class="logoBox">
-        <img src="./images/logo1.png" class="logo" alt="" />
-        <img src="./images/logo.png" class="logoText" alt="" />
-      </div>
-      <div class="viedoBox">
-        <video
-          poster="./images/viedo.png"
-          src="https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4"
-          id="videoShow"
-        ></video>
-        <div class="VideoBtn"></div>
-      </div>
-      <div class="cont1">
-        <img src="./images/img3.png" class="user" alt="" />
-        <div>
-          <p>用户角色</p>
-          <div class="cont1-text">小组集结，等你上车</div>
-        </div>
-      </div>
-      <div class="cont2">
-        <img src="./images/img3.png" class="user" alt="" />
-        <div class="cont2-right">
-          <p>用户名称</p>
-          <ul class="cont2-userBox">
-            <li>
-              <img class="userImg" src="./images/user.png" alt="" />
-              <div class="cont2-text">
-                <h3>李白</h3>
-                <div class="cont2-info">
-                  <span>大白兔傻傻奶糖</span>
-                  <img src="./images/male.png" alt="" />
-                  <span>已上车</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <img class="userImg" src="./images/user.png" alt="" />
-              <div class="cont2-text">
-                <h3>李白</h3>
-                <div class="cont2-info">
-                  <span>大白兔傻傻奶糖</span>
-                  <img src="./images/female.png" alt="" />
-                  <span>已上车</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <img class="userImg" src="./images/user.png" alt="" />
-              <div class="cont2-text">
-                <h3>李白</h3>
-                <div class="cont2-info">
-                  <span>大白兔傻傻奶糖</span>
-                  <img src="./images/female.png" alt="" />
-                  <span>已上车</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <img class="userImg" src="./images/user.png" alt="" />
-              <div class="cont2-text">
-                <h3>李白</h3>
-                <div class="cont2-info">
-                    <span>等你上车…</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <img class="userImg" src="./images/user.png" alt="" />
-              <div class="cont2-text">
-                <h3>李白</h3>
-                <div class="cont2-info">
-                  <span>等你上车…</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a href="#" class="toCar"></a>
-    </section>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jsmodern.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      $(function () {
-        //视频
-        // jsModern.video('#video')
-        //播放视频
-        $('.VideoBtn').click(function () {
-          var video = document.getElementById('videoShow')
-          video.play()
-          $('.VideoBtn').hide()
-        })
-        //监听视频的播放状态
-        var video = document.getElementById('videoShow')
-        video.oncanplay = function () {
-          $('.VideoBtn').show()
-        }
-        //视频播放事件
-        video.onplay = function () {
-          $('.VideoBtn').hide()
-        }
-        video.onplaying = function () {
-          $('.VideoBtn').hide()
-        }
 
-        //视频暂停事件
-        video.onpause = function () {
-          $('.VideoBtn').show()
-        }
-        //点击视频周围暂停播放图片出现
-        video.onclick = function () {
-          if (video.paused) {
-            $('.VideoBtn').hide()
-            video.play()
-          } else {
-            $('.VideoBtn').show()
-            video.pause()
-          }
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+  <title>vcoser</title>
+  <link rel="stylesheet" href="css/jsmodern.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="vcoser">
+    <div class="logoBox">
+      <img src="./images/logo1.png" class="logo" alt="" />
+      <img src="./images/logo.png" class="logoText" alt="" />
+    </div>
+    <div class="viedoBox">
+      <video poster="./images/viedo.png"
+        src="https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_Soldier76_Hero.mp4"
+        id="videoShow"></video>
+      <div class="VideoBtn"></div>
+    </div>
+    <div class="cont1">
+      <img src="./images/img3.png" class="user" alt="" />
+      <div>
+        <p>用户角色</p>
+        <div class="cont1-text">小组集结，等你上车</div>
+      </div>
+    </div>
+    <div class="cont2">
+      <img src="./images/img3.png" class="user" alt="" />
+      <div class="cont2-right">
+        <p>用户名称</p>
+        <ul class="cont2-userBox">
+          <li>
+            <img class="userImg" src="./images/user.png" alt="" />
+            <div class="cont2-text">
+              <h3>李白</h3>
+              <div class="cont2-info">
+                <span>大白兔傻傻奶糖</span>
+                <img src="./images/male.png" alt="" />
+                <span>已上车</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="userImg" src="./images/user.png" alt="" />
+            <div class="cont2-text">
+              <h3>李白</h3>
+              <div class="cont2-info">
+                <span>大白兔傻傻奶糖</span>
+                <img src="./images/female.png" alt="" />
+                <span>已上车</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="userImg" src="./images/user.png" alt="" />
+            <div class="cont2-text">
+              <h3>李白</h3>
+              <div class="cont2-info">
+                <span>大白兔傻傻奶糖</span>
+                <img src="./images/female.png" alt="" />
+                <span>已上车</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="userImg" src="./images/user.png" alt="" />
+            <div class="cont2-text">
+              <h3>李白</h3>
+              <div class="cont2-info">
+                <span>等你上车…</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img class="userImg" src="./images/user.png" alt="" />
+            <div class="cont2-text">
+              <h3>李白</h3>
+              <div class="cont2-info">
+                <span>等你上车…</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="toCar"></a>
+  </section>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jsmodern.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(function () {
+      //视频
+      // jsModern.video('#video')
+      //播放视频
+      $('.VideoBtn').click(function () {
+        var video = document.getElementById('videoShow')
+        video.play()
+        $('.VideoBtn').hide()
       })
-    </script>
-  </body>
+      //监听视频的播放状态
+      var video = document.getElementById('videoShow')
+      video.oncanplay = function () {
+        $('.VideoBtn').show()
+      }
+      //视频播放事件
+      video.onplay = function () {
+        $('.VideoBtn').hide()
+      }
+      video.onplaying = function () {
+        $('.VideoBtn').hide()
+      }
+
+      //视频暂停事件
+      video.onpause = function () {
+        $('.VideoBtn').show()
+      }
+      //点击视频周围暂停播放图片出现
+      video.onclick = function () {
+        if (video.paused) {
+          $('.VideoBtn').hide()
+          video.play()
+        } else {
+          $('.VideoBtn').show()
+          video.pause()
+        }
+      }
+    })
+  </script>
+</body>
+
 </html>
