@@ -1,0 +1,175 @@
+/* base */
+@font-face {
+  font-family: 'PingFang SC';
+  src: url('../css/PingFangSC-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../css/PingFangSC-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  background: #ffe81a;
+}
+ul {
+  list-style: none;
+}
+.w100 {
+  width: 100%;
+}
+.line {
+  width: 100%;
+  height: 0.9375rem;
+  background: #f7f7f7;
+}
+
+.title2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.vcoser {
+  max-width: 46.875rem;
+  background: #ffe81a url(../images/bg.png) no-repeat;
+  padding: 1rem 2.5rem;
+  min-height: 100vh;
+  background-size: contain;
+  padding-bottom: 13rem;
+  margin: 0 auto;
+}
+.vcoser .logoBox {
+  display: flex;
+  align-items: center;
+}
+.vcoser .logo {
+  width: 3.75rem;
+}
+.vcoser .logoText {
+  height: 2rem;
+}
+.vcoser .viedoBox {
+  position: relative;
+  width: 30.25rem;
+  height: 24.375rem;
+  margin: 3rem auto 2rem;
+}
+.vcoser #videoShow {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.625rem;
+  border: 0.5rem solid #000;
+  object-fit:fill;
+}
+.VideoBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.9375rem;
+  height: 5.9375rem;
+  cursor: pointer;
+  background: url(../images/bf.png) center no-repeat;
+  background-size: contain;
+}
+.vcoser .cont1 {
+  display: flex;
+  padding: 3rem 3.125rem 1.875rem;
+}
+.vcoser .cont1 p,
+.vcoser .cont2-right p {
+  font-size: 1.5rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #8c8c8c;
+  line-height: 2rem;
+}
+.vcoser img.user {
+  width: 4.5625rem;
+  height: 4.5625rem;
+  margin-right: 0.625rem;
+  border-radius: 50%;
+}
+.vcoser .cont1-text {
+  height: 5.125rem;
+  line-height: 5.125rem;
+  width: 23.125rem;
+  background: url(../images/img1.png) no-repeat;
+  background-size: contain;
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #262626;
+}
+
+.vcoser .cont2 {
+  display: flex;
+  padding: 0 3.125rem;
+}
+.vcoser .cont2-right .cont2-userBox {
+  background: url(../images/img2.png) no-repeat;
+  background-size: contain;
+  width: 30.9375rem;
+  height: 30.125rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.vcoser .cont2-right .cont2-userBox li {
+  display: flex;
+  margin-bottom: 0.625rem;
+}
+.vcoser .cont2-right .cont2-text {
+  padding-left: 1rem;
+}
+
+.vcoser .cont2-right .cont2-text h3 {
+  height: 2rem;
+  font-size: 2rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #262626;
+  line-height: 2rem;
+}
+
+.cont2-info {
+  height: 2rem;
+  font-size: 1.5rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #8c8c8c;
+  line-height: 3rem;
+}
+.cont2-info img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 1.5rem;
+}
+
+.vcoser .toCar {
+  display: block;
+  width: 20.625rem;
+  height: 8.125rem;
+  background: url(../images/now.png) no-repeat;
+  background-size: contain;
+  /* margin: 7.5625rem auto 0; */
+  position: relative;
+  bottom: -2.4375rem;
+  left: 28%;
+}
+
+.userImg {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+
+
