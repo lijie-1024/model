@@ -18,17 +18,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   width: 100%;
   background: #ffe81a;
 }
+
 ul {
   list-style: none;
 }
+
 .w100 {
   width: 100%;
 }
+
 .line {
   width: 100%;
   height: 0.9375rem;
@@ -45,38 +49,45 @@ ul {
   background: #ffe81a url(../images/bg.png) no-repeat;
   padding: 1rem 2.5rem;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
   padding-bottom: 10%;
   margin: 0 auto;
+  margin-bottom: 20%;
 }
+
 .vcoser .logoBox {
   display: flex;
   align-items: center;
 }
+
 .vcoser .logo {
   width: 3.75rem;
 }
+
 .vcoser .logoText {
   height: 2rem;
 }
+
 .vcoser .viedoBox {
-  position: relative;
+  /* position: relative;
   width: 30.25rem;
   height: 24.375rem;
-  margin: 3rem auto 2rem;
-  /* position: relative;
-  width: 28.25rem;
-  height: 22.375rem;
+  margin: 3rem auto 2rem; */
+  position: relative;
+  width: 75%;
+  height: 50vw;
   margin: 3rem auto;
-  box-sizing: border-box; */
+  box-sizing: border-box;
 }
+
 .vcoser #videoShow {
   width: 100%;
   height: 100%;
   border-radius: 0.625rem;
   border: 0.5rem solid #000;
-  object-fit:fill;
+  object-fit: fill;
 }
+
 .VideoBtn {
   position: absolute;
   top: 50%;
@@ -88,10 +99,12 @@ ul {
   background: url(../images/bf.png) center no-repeat;
   background-size: contain;
 }
+
 .vcoser .cont1 {
   display: flex;
   padding: 2% 5%;
 }
+
 .vcoser .cont1 p,
 .vcoser .cont2-right p {
   font-size: 1.5rem;
@@ -99,12 +112,14 @@ ul {
   color: #8c8c8c;
   line-height: 2rem;
 }
+
 .vcoser img.user {
   width: 4.5625rem;
   height: 4.5625rem;
   margin-right: 0.625rem;
   border-radius: 50%;
 }
+
 .vcoser .cont1-text {
   height: 5.125rem;
   line-height: 5.125rem;
@@ -121,6 +136,7 @@ ul {
   display: flex;
   padding: 0 5%;
 }
+
 .vcoser .cont2-right .cont2-userBox {
   background: url(../images/img2.png) no-repeat;
   background-size: contain;
@@ -133,6 +149,7 @@ ul {
   display: flex;
   margin-bottom: 0.625rem;
 }
+
 .vcoser .cont2-right .cont2-text {
   padding-left: 1rem;
 }
@@ -153,6 +170,7 @@ ul {
   color: #8c8c8c;
   line-height: 3rem;
 }
+
 .cont2-info img {
   width: 1.125rem;
   height: 1.125rem;
@@ -167,7 +185,7 @@ ul {
   background-size: contain;
   /* margin: 7.5625rem auto 0; */
   position: relative;
-  bottom: -2rem;
+  bottom: -6vh;
   left: 28%;
 }
 
@@ -175,6 +193,3 @@ ul {
   width: 3.125rem;
   height: 3.125rem;
 }
-
-
-
