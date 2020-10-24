@@ -462,8 +462,10 @@ h1.bannerText {
   .cont5 h1.bannerText{
     bottom: 2%;
   }
-  .cont5 .youdian h1 {
+  .cont5 .youdian h1.font-hy{
     margin-bottom: 0;
+  }
+  .cont5 .youdian .yd-part2 h1 {
     width: 3em;
   }
   .cont5 .yd-part2-text{
