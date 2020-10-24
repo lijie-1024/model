@@ -19,11 +19,6 @@ html ,body{
 @font-face {
   font-family: HYRuiZhiW;
   src: url('../font/HYRuiZhiW.ttf');
-  src:local('☺'),
-		url('../font/HYRuiZhiW.eot?#iefix') format('embedded-opentype'),
-		url('../font/HYRuiZhiW.ttf') format('truetype');
-		font-weight:normal;
-		font-style:normal;
 }
 .font-hy{
   font-family: HYRuiZhiW;

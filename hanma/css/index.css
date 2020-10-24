@@ -404,8 +404,9 @@ h1.bannerText {
   }
 }
 @media screen and (max-width: 460px) {
-  h1.bannerText {
-    bottom: 20%;
+  .cont1 h1.bannerText {
+    bottom: 5%;
+    padding: 0;
   }
   .qus {
     width: 60%;
@@ -421,6 +422,10 @@ h1.bannerText {
     background-size: contain;
     height: 8vh;
   }
+  .cont2 .qusBox li .qusText{
+    right: 10%;
+    top: -20%;
+  }
   .cont2 .phoneBox .right li {
     padding: 1% 5%;
   }
@@ -429,28 +434,49 @@ h1.bannerText {
   }
   .cont3-part1 {
     padding-bottom: 30%;
+    padding-top: 10%;
   }
   .cont3-part1 h1.font-hy{
-    bottom: 5%;
+    bottom: 2em;
+  }
+  .cont3 .tcBox li{
+    padding: 2%;
+  }
+  .cont3 .tcBox li .left{
+    margin-top: 3%;
   }
   .cont4 .pr .people {
     height: auto;
     width: 40%;
+    right: 5%;
   }
   .cont4 {
     height: 30vh;
   }
+  .cont5 .youdian ul.yd-part1 .yd-item{
+    top: -10%;
+  }
+  .cont5 .youdian ul.yd-part1 .yd-item:nth-of-type(2){
+    top: 70%;
+  }
   .cont5 h1.bannerText{
-    bottom: 4%;
+    bottom: 2%;
   }
   .cont5 .youdian h1 {
     margin-bottom: 0;
+    width: 3em;
+  }
+  .cont5 .yd-part2-text{
+    line-height: 2;
   }
   .cont5 .yd-part3 li p.l8 {
-    line-height: 3;
+    line-height: 2;
   }
   .cont5 .yd-part3 li p {
     height: auto;
+  }
+  .cont4 .pr .cont4-text p{
+    line-height: 1.2;
   }
   .cont6 .cont6-part2 p{
     line-height: 2;
