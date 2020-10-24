@@ -35,7 +35,7 @@ header .call .call-text {
   height: 3.375rem;
   line-height: 3.1rem;
   font-size: 2.25rem;
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
   border: 1px solid #1d2088;
 }
 header .call .wecat {
@@ -59,7 +59,7 @@ header .call .wecat {
 .cont1 h1 span {
   font-size: 4.25rem;
 }
- h1.bannerText{
+h1.bannerText {
   position: absolute;
   bottom: 11rem;
   left: 20%;
@@ -69,9 +69,10 @@ header .call .wecat {
   letter-spacing: -1px;
   font-style: oblique;
   color: #fff;
-  padding: 2rem;  -moz-text-shadow:#1d2088 2px 0 0,#1d2088 0 2px 0,#1d2088 -1px 0 0,#1d2088 0 -1px 0;
-text-shadow:#1d2088 2px 0 0,#1d2088 0 2px 0,#1d2088 -1px 0 0,#1d2088 0 -1px 0;
--webkit-text-shadow:#1d2088 2px 0 0,#1d2088 0 1px 0,#1d2088 -1px 0 0,#1d2088 0 -1px 0;
+  padding: 2rem;
+  -moz-text-shadow: #1d2088 2px 0 0, #1d2088 0 2px 0, #1d2088 -1px 0 0, #1d2088 0 -1px 0;
+  text-shadow: #1d2088 2px 0 0, #1d2088 0 2px 0, #1d2088 -1px 0 0, #1d2088 0 -1px 0;
+  -webkit-text-shadow: #1d2088 2px 0 0, #1d2088 0 1px 0, #1d2088 -1px 0 0, #1d2088 0 -1px 0;
 }
 .cont2 {
   margin: 11.25rem auto;
@@ -383,9 +384,9 @@ text-shadow:#1d2088 2px 0 0,#1d2088 0 2px 0,#1d2088 -1px 0 0,#1d2088 0 -1px 0;
 .cont6 .cont6-part2 .erweima {
   width: 20rem;
 }
-.cont6 .cont6-part2 .callme img{
-    width: 5rem;
-    height: 5rem;
+.cont6 .cont6-part2 .callme img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .cont6 .cont6-part2 .callme a {
@@ -395,116 +396,97 @@ text-shadow:#1d2088 2px 0 0,#1d2088 0 2px 0,#1d2088 -1px 0 0,#1d2088 0 -1px 0;
 .cont6 {
   margin-bottom: 5rem;
 }
-/* @media screen and (max-width: 1020px) {
-  .cont4 .pr .people {
-    right: -10%;
-  }
-} */
+
 /* 移动端 样式 */
 @media screen and (max-width: 760px) {
   .main {
     width: 90%;
   }
-  /* .cont5 .youdian {
-    padding: 2rem;
-  }
-  header .call .call-text {
-    height: 2rem;
-    line-height: 2rem;
-  }
-  .cont1 h1 {
-    padding: 1rem;
-  }
-  .cont2 {
-    margin: 3rem auto 1rem;
+}
+@media screen and (max-width: 460px) {
+  h1.bannerText {
+    bottom: 20%;
   }
   .qus {
-    padding: 0.5rem 0 0.5rem 3rem;
+    width: 60%;
   }
-  .cont2 .qusBox {
-    padding-top: 3rem;
+  .cont2 {
+    margin: 10% auto;
+  }
+  .cont2 .qusBox li span.num {
+    top: 0;
   }
   .cont2 .qusBox li {
     background-size: contain;
-    height: 4rem;
-  }
-  .cont2 .phoneBox {
-    padding-top: 2rem;
-    align-items: inherit;
+    height: 8vh;
   }
   .cont2 .phoneBox .right li {
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1% 5%;
   }
-  .cont3-part1 .main {
-    padding-top: 2rem;
-  }
-  .cont3 .tcBox li {
-    padding: 1rem;
-  }
-  .cont3 .tcBox li .left {
-    width: 40%;
-    margin-right: 1rem;
-  }
-  .cont3 .tcBox li .right,
-  .cont3 .tcBox li p {
+  .cont3 .tcBox li .right {
     margin: 0;
   }
   .cont3-part1 {
-    padding-bottom: 40%;
-  }
-  .cont3 .callBox {
-    padding: 1rem;
-  }
-  .cont3 .callBox h1 {
-    font-size: 5rem;
-  }
-  .cont4 {
-    height: 25rem;
+    padding-bottom: 30%;
   }
   .cont4 .pr .people {
-    right: 0;
-  } */
-/*  
-  .cont4 .pr .cont4-title h2 {
-    font-size: 3.5rem;
+    height: auto;
+    width: 40%;
   }
-  .cont4 .pr .cont4-text p {
-    line-height: 1.2rem;
+  .cont4 {
+    min-height: 30vh;
   }
-  .cont5 .youdian h1,
-  .cont4 .pr .cont4-title h1 {
-    font-size: 7rem;
-  }
-  .cont5 .youdian ul.yd-part1 {
-    margin: 3rem 0;
-  }
-  .cont5 .yd-part2-text {
-    line-height: 2;
+  .cont5 .youdian h1 {
+    margin-bottom: 0;
   }
   .cont5 .yd-part3 li p.l8 {
-    line-height: 2rem;
+    line-height: 3;
   }
   .cont5 .yd-part3 li p {
-    height: 5rem;
+    height: auto;
   }
-  .cont6 .cont6-part2 p {
-    line-height: 2rem;
-  } */
+  h1.bannerText {
+    bottom: 4%;
+  }
+  .cont6 .cont6-part2 .erweima {
+    width: 40%;
+  }
+  .cont6 .cont6-part2 .callme img {
+    width: 25%;
+    height: auto;
+  }
+  .cont6 .cont6-part2 > div.flex {
+    width: 50%;
+  }
 }
 
 @-webkit-keyframes bounce-down {
- 25% {-webkit-transform: translateY(-5px);}
- 50%, 100% {-webkit-transform: translateY(0);}
- 75% {-webkit-transform: translateY(5px);}
+  25% {
+    -webkit-transform: translateY(-5px);
+  }
+  50%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(5px);
+  }
 }
 
 @keyframes bounce-down {
- 25% {transform: translateY(-5px);}
- 50%, 100% {transform: translateY(0);}
- 75% {transform: translateY(5px);}
+  25% {
+    transform: translateY(-5px);
+  }
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
 }
 
-.animate-bounce-down{ -webkit-animation: bounce-down 1.5s linear infinite;animation: bounce-down 1.5s linear infinite;
+.animate-bounce-down {
+  -webkit-animation: bounce-down 1.5s linear infinite;
+  animation: bounce-down 1.5s linear infinite;
 }
-

@@ -17,20 +17,20 @@
     false
   )
   // 实际放大后的字体
-  var size = parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
-  var resizeSize = parseInt((browserWidth / designW) * font_rate)
-  var newSize = size * (resizeSize / size)
-  var htmlSize = document.getElementsByTagName('html')[0].style.fontSize
-  var bodySize = document.getElementsByTagName('body')[0].style.fontSize
-  document.getElementById('test').innerHTML = bodySize + ',' + htmlSize + ',' + size + ',' + parseInt(resizeSize) + ',' + newSize
-  console.log(size)
-  console.log(resizeSize)
-  console.log(newSize)
-  if (size != resizeSize) {
-    document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
-    document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
-    document.documentElement.style.fontSize = newSize + 'px'
-    document.getElementById('test').innerHTML = size + '！' + newSize
-  }
+  // var size = parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
+  // var resizeSize = parseInt((browserWidth / designW) * font_rate)
+  // var newSize = size * (resizeSize / size)
+  // var htmlSize = document.getElementsByTagName('html')[0].style.fontSize
+  // var bodySize = document.getElementsByTagName('body')[0].style.fontSize
+  // document.getElementById('test').innerHTML = bodySize + ',' + htmlSize + ',' + size + ',' + parseInt(resizeSize) + ',' + newSize
+  // console.log(size)
+  // console.log(resizeSize)
+  // console.log(newSize)
+  // if (size != resizeSize) {
+  //   document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
+  //   document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
+  //   document.documentElement.style.fontSize = newSize + 'px'
+  //   document.getElementById('test').innerHTML = size + '！' + newSize
+  // }
   // window.getComputedStyle(document.querySelector('html'), null).setProperty('font-size',newSize + 'px')
 })()
