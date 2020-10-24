@@ -484,14 +484,20 @@ h1.bannerText {
     line-height: 2;
   }
   .cont6 .cont6-part2 .erweima {
-    width: 40%;
+    width: 50%;
   }
   .cont6 .cont6-part2 .callme img {
     width: 100%;
     height: auto;
   }
   .cont6 .cont6-part2 > div.flex {
-    width: 50%;
+    width: 26%;
+  }
+  .cont6 .cont6-part2{
+    padding: 2%;
+  }
+  .cont6 .cont6-part2 .callme a{
+    margin-right: 1px;
   }
 }
 
