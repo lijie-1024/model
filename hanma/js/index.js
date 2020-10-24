@@ -27,6 +27,8 @@
   console.log(newSize)
   document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
   document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
+  document.documentElement.style.fontSize = newSize + 'px'
+  // console.log(document.documentElement);
 
   document.getElementById('test').innerHTML = size + ',' + parseInt(resizeSize) + ',' + newSize
 })()
