@@ -17,16 +17,16 @@
     false
   )
   // 实际放大后的字体
-  var size =parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
+  var size = parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
 
-  var resizeSize = (browserWidth / designW) * font_rate
+  var resizeSize = parseInt((browserWidth / designW) * font_rate)
 
-  var newSize = resizeSize *( resizeSize / size)
+  var newSize = (resizeSize * resizeSize) / size
   console.log(size)
   console.log(resizeSize)
   console.log(newSize)
-  document.getElementsByTagName('html')[0].style.fontSize = newSize +'px'
-  document.getElementsByTagName('body')[0].style.fontSize = newSize +'px'
+  document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
+  document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
 
-  document.getElementById('test').innerHTML = size+','+resizeSize+','+newSize
+  document.getElementById('test').innerHTML = size + ',' + parseInt(resizeSize) + ',' + newSize
 })()
