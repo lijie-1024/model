@@ -20,15 +20,17 @@
   var size = parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
 
   var resizeSize = parseInt((browserWidth / designW) * font_rate)
-
   var newSize = size * (resizeSize / size)
   console.log(size)
   console.log(resizeSize)
   console.log(newSize)
-  document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
-  document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
-  document.documentElement.style.fontSize = newSize + 'px'
-  // console.log(document.documentElement);
+  if(size !== resizeSize){
+    document.getElementsByTagName('html')[0].style.fontSize = newSize + 'px'
+    document.getElementsByTagName('body')[0].style.fontSize = newSize + 'px'
+    document.documentElement.style.fontSize = newSize + 'px'
+  }
+  var htmlSize = document.getElementsByTagName('html')[0].style.fontSize
+  var bodySize = document.getElementsByTagName('body')[0].style.fontSize
 
-  document.getElementById('test').innerHTML = size + ',' + parseInt(resizeSize) + ',' + newSize
+  document.getElementById('test').innerHTML = bodySize + ',' + htmlSize + ',' + size + ',' + parseInt(resizeSize) + ',' + newSize
 })()
