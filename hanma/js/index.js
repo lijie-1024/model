@@ -16,10 +16,13 @@
     },
     false
   )
-  // 放大后的字体
-  var size = window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size')
+  // 实际放大后的字体
+  var size =parseInt(window.getComputedStyle(document.querySelector('html'), null).getPropertyValue('font-size'))
 
   var resizeSize = (browserWidth / designW) * font_rate
+
+  var newSize = resizeSize *( resizeSize / size)
   console.log(size)
   console.log(resizeSize)
+  console.log(newSize)
 })()
