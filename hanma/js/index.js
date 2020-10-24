@@ -21,7 +21,7 @@
 
   var resizeSize = parseInt((browserWidth / designW) * font_rate)
 
-  var newSize = (resizeSize * resizeSize) / size
+  var newSize = size * (resizeSize / size)
   console.log(size)
   console.log(resizeSize)
   console.log(newSize)
