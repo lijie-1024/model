@@ -5,9 +5,9 @@
  * @功能：1、重设浏览器默认样式
  *       2、设置通用原子类
  */
- *{
+ *,*::after,*::before{
    box-sizing: border-box;
-   max-height: 100%;
+   max-height: 100000px;
  }
 html ,body{
   background: white;
