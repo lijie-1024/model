@@ -409,6 +409,7 @@ h1.bannerText {
   }
   .qus {
     width: 60%;
+    padding-left: 8%;
   }
   .cont2 {
     margin: 10% auto;
@@ -429,12 +430,18 @@ h1.bannerText {
   .cont3-part1 {
     padding-bottom: 30%;
   }
+  .cont3-part1 h1.font-hy{
+    bottom: 5%;
+  }
   .cont4 .pr .people {
     height: auto;
     width: 40%;
   }
   .cont4 {
-    min-height: 30vh;
+    height: 30vh;
+  }
+  .cont5 h1.bannerText{
+    bottom: 4%;
   }
   .cont5 .youdian h1 {
     margin-bottom: 0;
@@ -445,14 +452,14 @@ h1.bannerText {
   .cont5 .yd-part3 li p {
     height: auto;
   }
-  h1.bannerText {
-    bottom: 4%;
+  .cont6 .cont6-part2 p{
+    line-height: 2;
   }
   .cont6 .cont6-part2 .erweima {
     width: 40%;
   }
   .cont6 .cont6-part2 .callme img {
-    width: 25%;
+    width: 100%;
     height: auto;
   }
   .cont6 .cont6-part2 > div.flex {
