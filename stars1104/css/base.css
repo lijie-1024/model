@@ -1,0 +1,140 @@
+@font-face {
+  font-family: SourceHanSerifCN-Regular;
+  src: url('../fonts/SOURCEHANSERIFCN-REGULAR.OTF');
+}
+@font-face {
+  font-family: ENTEXT;
+  src: url('../fonts/34455_U.TTF');
+}
+@font-face {
+  font-family: RUSTLERBARTER;
+  src: url('../fonts/RUSTLERBARTER-2.OTF');
+}
+@font-face {
+  font-family: FZSJ-JIAMWH;
+  src: url('../fonts/假面舞会.TTF');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: SourceHanSerifCN-Regular;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+}
+.enbody {
+  font-family: ENTEXT;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.main {
+  width: 85rem;
+  margin: 0 auto;
+}
+
+.title {
+  width: 33.0625rem;
+  text-align: center;
+  height: 4rem;
+  font-size: 3.0625rem;
+  font-family: FZSJ-JIAMWH;
+  font-weight: 400;
+  line-height: 4rem;
+  color: #ffffff;
+  background: url(../image/pc/xingzhuang.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.enbody .title {
+  font-family: RUSTLERBARTER;
+}
+
+/* 弹框 */
+#modelNav {
+  display: none;
+  width: 100%;
+  background: #000;
+  height: 100%;
+  padding: 3rem 0;
+  color: #6E6E6E;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  overflow: scroll;
+}
+
+#close_btn {
+  width: 5rem;
+  height: 5rem;
+  z-index: 999;
+  margin-bottom: 3rem;
+}
+
+#modelNav ul {
+  padding-inline-start: 0;
+}
+#modelNav hr {
+  margin: 2rem 0;
+}
+
+#modelNav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+#modelNav ul li a,
+#modelNav .changeNav a {
+  color: #6E6E6E;
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  font-family: SourceHanSerifCN-Regular;
+}
+
+#modelNav ul li.active >a {
+  color: #5e01f2;
+}
+
+#modelNav ul li a:hover {
+  color: #5e01f2;
+  text-decoration: none;
+}
+
+#modelNav .changeNav {
+  padding-top: 2.3125rem;
+  border-top: 1px solid #2c3253;
+}
+
+#modelNav .changeNav a.activeRed {
+  width: 10.4rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  display: inline-block;
+  color: #5e01f2;
+  border: 1px solid #5e01f2;
+  border-radius: 0.5rem;
+}
+#modelNav .changeNav img{
+  width: 50%;
+}
+.hide{
+  display: none;
+}

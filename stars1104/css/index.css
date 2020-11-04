@@ -1,0 +1,690 @@
+/* 头部 */
+header {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  width: 100%;
+  height: 5rem;
+}
+
+.pc_header {
+  line-height: 5rem;
+  height: 5rem;
+  position: relative;
+}
+
+.pc_header .pc_logo {
+  float: left;
+  width: 7.6875rem;
+  height: 8.3125rem;
+}
+
+.pc_logo_scroll {
+  display: none;
+  float: left;
+  height: 4.5rem;
+}
+
+.pc_header .changeBox {
+  display: inline-block;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: absolute;
+  left: 8rem;
+}
+
+.pc_header .changeBox:hover .enBox li a {
+  top: -20px;
+}
+
+.pc_header .enBox li a {
+  position: relative;
+  top: -180px;
+  left: 0;
+  display: block;
+  line-height: 30px;
+  color: #999999;
+  padding: 5px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.pc_header .enBox li a:hover {
+  color: #5e01f2;
+}
+
+.changeBox span {
+  width: 1.5rem;
+  font-size: 18px;
+  font-family: Times;
+  line-height: 20px;
+  color: #3a3a3a;
+}
+
+.pc_header .nav {
+  float: right;
+}
+
+.pc_header .nav .nav-item a {
+  display: inline-block;
+  padding: 0.625rem 1em;
+  color: #6e6e6e;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition: color 0.5s;
+}
+
+.pc_header .nav .nav-item a:hover {
+  color: #5e01f2;
+  /* border-bottom: 2px solid #5e01f2; */
+}
+
+.pc_header .nav .nav-item.active > a {
+  border-bottom: 2px solid #5e01f2;
+}
+
+/* 主体 */
+.banner {
+  background: url(../image/pc/banner.png) no-repeat;
+  background-size: contain;
+  height: 56.25rem;
+}
+
+.cont1 {
+  position: absolute;
+  bottom: 9rem;
+}
+
+.cont1 h1 {
+  height: 7.875rem;
+  font-size: 3.125rem;
+  font-family: FZSJ-JIAMWH;
+  font-weight: 400;
+  line-height: 3.875rem;
+  color: #ffffff;
+}
+
+.cont1 p {
+  height: 1.875rem;
+  font-size: 1.3125rem;
+  line-height: 1.875rem;
+  color: #6e6e6e;
+  margin-top: 1.875rem;
+}
+
+.cont1 .line {
+  width: 5.375rem;
+  height: 0.4375rem;
+  background: #ffffff;
+  margin-top: 5.875rem;
+}
+
+/* 简介 */
+.part2 {
+  background: url(../image/pc/bg.png) no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+.cont2 {
+  width: 62.5rem;
+  margin: 5.625rem auto;
+}
+
+.cont2 .viedoBox {
+  position: relative;
+  width: 58.9375rem;
+  height: 34.5rem;
+  margin: 10px auto;
+  background: url(../image/pc/xingzhuang_1.png) center no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.cont2 .viedoBox video {
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+}
+
+.cont2 .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.9375rem;
+  height: 5.9375rem;
+  cursor: pointer;
+  background: url(../image/pc/bf.png) center no-repeat;
+  background-size: contain;
+}
+
+.cont2 .aboutBox {
+  background: url(../image/pc/xingzhuang_3.png) center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 17.0625rem;
+}
+
+.cont2 .aboutBox p {
+  text-align: left;
+  font-size: 1rem;
+  padding: 4.75rem 4.3125rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+}
+
+/* 核心优势 */
+.cont3 .merit {
+  margin: 5.5rem auto;
+}
+
+.cont3 .merit li {
+  float: left;
+  width: calc(50% - 60px);
+  margin: 20px 30px;
+  position: relative;
+  background: url(../image/pc/xingzhuang_4.png) center no-repeat;
+  background-size: contain;
+  height: 12rem;
+  color: #fff;
+  /* transition: all .3s; */
+}
+
+.cont3 .merit li:hover * {
+  color: #5e01f2;
+  cursor: pointer;
+}
+
+.cont3 .merit li h2 {
+  position: absolute;
+  top: 1rem;
+  left: 3.5rem;
+  font-size: 1.5rem;
+  font-family: FZSJ-JIAMWH;
+  font-weight: 400;
+  line-height: 2.75rem;
+}
+
+.cont3 .merit li p {
+  position: absolute;
+  top: 6.25rem;
+  left: 3.5rem;
+  width: 82%;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: #808080;
+}
+
+.cont4 .swiper-container {
+  width: 100%;
+  height: 700px;
+}
+
+.cont4 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont4 .swiper-slide img {
+  width: 32.1875rem;
+  height: 32.1875rem;
+}
+
+.cont4 .swiper-text {
+  margin-left: 5rem;
+}
+
+.cont4 .swiper-text h2 {
+  font-size: 2.875rem;
+  font-family: FZSJ-JIAMWH;
+  font-weight: 400;
+  line-height: 3.75rem;
+  color: #ffffff;
+}
+
+.cont4 .swiper-text ul li {
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #666666;
+}
+
+.cont4 .swiper-text ul li::before {
+  display: inline-block;
+  content: '1';
+  color: transparent;
+  width: 2rem;
+  height: 1.0625rem;
+  line-height: 1rem;
+  background: url(../image/pc/after.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .swiper-button-prev {
+  width: 4rem;
+  height: 6rem;
+  background-size: cover;
+  color: transparent;
+  background: url(../image/pc/jt.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .swiper-button-next {
+  width: 4rem;
+  height: 6rem;
+  background-size: cover;
+  color: transparent;
+  background: url(../image/pc/jt_2.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .swiper-pagination {
+  position: relative;
+}
+
+.cont4 .swiper-navBar {
+  position: absolute;
+  bottom: 0;
+  right: 2.1875rem;
+  color: #5e01f2;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+
+.cont4 .prevBtn {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background: url(../image/pc/jt_3.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .nextBtn {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background: url(../image/pc/jt_4.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .swiper-navBar div {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cont4 .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  opacity: 1;
+  margin: 0 2rem;
+  background: url(../image/pc/yuan_2.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .swiper-pagination-bullet-active {
+  background: url(../image/pc/yuan_1.png) no-repeat;
+  background-size: contain;
+}
+
+.cont4 .navBarActive {
+  height: 2.75rem;
+  font-size: 2.125rem;
+  font-family: FZSJ-JIAMWH;
+  line-height: 2.75rem;
+  color: #999999;
+  margin-right: 2rem;
+}
+
+/* 应用场景 */
+.cont5 .title {
+  margin: 10rem auto;
+}
+
+.cont5 .scene {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.cont5 .scene li {
+  flex: 1;
+  cursor: pointer;
+}
+
+.cont5 .scene li img {
+  width: 8.125rem;
+  height: 8.125rem;
+}
+
+.cont5 .scene li p {
+  height: 2.0625rem;
+  font-size: 1.5625rem;
+  font-family: FZSJ-JIAMWH;
+  line-height: 2.0625rem;
+  color: #ffffff;
+  margin-top: 3.75rem;
+  transition: all 0.3s;
+}
+
+.cont5 .scene li:hover p {
+  color: #5e01f2;
+}
+
+footer {
+  position: relative;
+  height: 5.875rem;
+  line-height: 5.875rem;
+  background: #0c0c0c;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8125rem;
+  color: #808080;
+  margin: 0;
+}
+
+footer .toTopBtn {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  width: 3.125rem;
+  height: 3.125rem;
+  background: url(../image/pc/zhiding.png) no-repeat;
+  background-size: contain;
+}
+
+.m_header {
+  display: none;
+}
+.downImg {
+  width: 16px;
+}
+
+#nav-cont1:hover .secondTitle {
+  opacity: 1;
+}
+
+.pc_header .nav-item .secondTitle {
+  background: #000;
+  position: absolute;
+  opacity: 0;
+}
+
+.pc_header .nav-item .secondTitle a {
+  display: block;
+  line-height: 2;
+}
+/* .modelHide{
+  display: block;
+} */
+
+/* 移动端 样式 */
+@media screen and (max-width: 860px) {
+  .modelHide {
+    display: none !important;
+  }
+
+  .pc_header {
+    display: none;
+  }
+
+  header {
+    /* position: relative; */
+    height: 6rem;
+  }
+
+  .m_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    padding: 0 1.375rem;
+  }
+
+  .m_logo {
+    height: 3.65rem;
+  }
+
+  .banner {
+    background: url(../image/model/banner.png) center no-repeat;
+    background-size: contain;
+  }
+
+  .main {
+    width: calc(100% - 35px);
+  }
+
+  .cont1 {
+    bottom: 0;
+    top: 10rem;
+    left: 2.25rem;
+  }
+
+  .cont1 .line {
+    margin-top: 2rem;
+  }
+
+  .part2 {
+    background: url(../image/model/GUI.png) no-repeat;
+    background-size: cover;
+  }
+
+  .cont2 {
+    width: 100%;
+    padding: 6.25rem 2rem 0;
+  }
+
+  .cont2 .viedoBox {
+    width: 88%;
+    height: auto;
+    padding: 1.2rem 0.5rem 0.7rem;
+    background: url(../image/model/xingzhuang_1.png) center no-repeat;
+    background-size: contain;
+  }
+
+  .cont2 .aboutBox {
+    background: url(../image/model/border.png) center no-repeat;
+    background-size: contain;
+    height: 225px;
+  }
+
+  .cont3 .merit li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cont3 .merit li h2 {
+    top: 1.8rem;
+  }
+
+  .cont3 .merit li p {
+    width: 83%;
+  }
+
+  .cont4 .swiper-container {
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .cont4 .swiper-slide {
+    display: block;
+    text-align: center;
+  }
+
+  .cont4 .swiper-slide img {
+    width: 65%;
+    height: auto;
+  }
+
+  .cont4 .swiper-text {
+    margin: 5rem auto;
+    width: 80%;
+  }
+
+  .cont4 .swiper-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .cont4 .swiper-text ul li {
+    text-align: left;
+    line-height: 2.5rem;
+    margin: 0 auto;
+  }
+
+  .cont4 .swiper-pagination-bullet {
+    margin: 0 1rem;
+  }
+
+  .cont4 .swiper-navBar {
+    top: 5rem;
+    left: 20%;
+    width: 60%;
+  }
+
+  .cont4 .swiper-button-next {
+    background: url(../image/model/jt_2.png) no-repeat;
+    right: 0;
+  }
+
+  .cont4 .swiper-button-prev {
+    left: 0;
+    background: url(../image/model/jt_1.png) no-repeat;
+  }
+
+  .cont4 .swiper-button-next,
+  .cont4 .swiper-button-prev {
+    top: 24%;
+    background-size: contain;
+  }
+
+  .cont5 .scene {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .cont5 .scene li {
+    width: 33%;
+    flex: none;
+    margin-bottom: 2rem;
+  }
+
+  .cont5 .scene li img {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .cont5 .scene li p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .cont5 .title {
+    margin: 2rem auto 5rem;
+  }
+
+  .footer_pc {
+    display: none;
+  }
+
+  footer {
+    text-align: left;
+    padding: 0 2rem;
+  }
+
+  .footer_model {
+    display: inline-block;
+  }
+
+  .cont2 .viedoBox video {
+    /* margin: 1rem; */
+    padding: 0;
+  }
+  .sub-menu {
+    background: #121212;
+    display: none;
+  }
+  #modelNav ul li .sub-menu a {
+    font-size: 1.2rem;
+  }
+}
+
+/* 英文 */
+.enbody .title {
+  width: 60rem;
+}
+
+.enbody .cont2 .aboutBox p {
+  padding: 3rem;
+}
+
+.enbody .cont3 .merit li p {
+  top: 5.25rem;
+}
+
+.enbody .cont4 .swiper-text {
+  width: 40%;
+}
+
+.enbody .cont1 p {
+  max-width: 33rem;
+}
+@media screen and (max-width: 860px) {
+  .enbody .title {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .enbody p {
+    word-break: break-all;
+  }
+
+  .enbody .banner {
+    margin-top: 9rem;
+  }
+
+  .enbody .cont1 {
+    width: 80%;
+  }
+
+  .enbody .cont1 h1,
+  .enbody .cont1 p {
+    height: auto;
+  }
+
+  .enbody .cont4 .swiper-text {
+    width: 85%;
+    word-break: break-all;
+    margin-top: 7rem;
+  }
+
+  .enbody .cont4 .swiper-navBar {
+    bottom: 50%;
+    height: 30px;
+    top: auto;
+  }
+
+  .enbody .cont2 .aboutBox p {
+    padding: 2rem 3rem;
+    line-height: 1.2rem;
+  }
+
+  .enbody .cont3 .merit li p {
+    width: 85%;
+    line-height: 1.5rem;
+  }
+
+  .enbody .cont5 .scene li p {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    height: 7rem;
+  }
+}
