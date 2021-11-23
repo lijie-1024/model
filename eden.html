@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eden</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="eden">
+    <a class="link link1" href="./garden.html">garden</a>
+    <a class="link link2" href="./god.html">god</a>
+    <video class="video video1" controls loop src="./mp4/endn1.mp4" poster="./mp4/endn1.jpg" autoplay></video>
+    <video class="video video2" controls loop src="./mp4/endn2.mp4" poster="./mp4/endn2.jpg" autoplay></video>
+    <img class="mouse" src="./images/cursor.png" alt="" />
+    <script>
+      var mouse = document.querySelector('.mouse')
+      window.addEventListener('mousemove', function (event) {
+        mouse.style.left = event.clientX - mouse.offsetWidth / 2 + 'px'
+        mouse.style.top = event.clientY - mouse.offsetHeight / 2 + 'px'
+      })
+    </script>
+  </body>
+</html>

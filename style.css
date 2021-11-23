@@ -1,0 +1,169 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  cursor: none;
+}
+.mouse {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  left: -200px;
+  z-index: 1000;
+  pointer-events: none;
+}
+.link {
+  display: block;
+  position: fixed;
+  /* background-color: rgba(255, 0, 0, 0.158); */
+  color: transparent;
+}
+
+
+/* home */
+body.home {
+    background-image: url(./images/index.png);
+}
+.home .link1{
+    width: 200px;
+    height: 50px;
+    left: 10vw;
+    top: 20vh;
+}
+.home .link2{
+    width: 200px;
+    height: 50px;
+    left: 40vw;
+    top: 55vh;
+}
+.home .link3{
+    width: 200px;
+    height: 50px;
+    right: 5vw;
+    top: 5vh;
+}
+
+
+/* human */
+body.human {
+    background-image: url(./images/human.png);
+}
+
+.human .link2{
+    width: 200px;
+    height: 50px;
+    left: 5vw;
+    top: 1vh;
+}
+.human .link1{
+    width: 200px;
+    height: 50px;
+    right: 5vw;
+    top: 1vh;
+}
+
+/* goddess */
+body.goddess {
+    background-image: url(./images/goddess.png);
+}
+
+.goddess .link2{
+    width: 200px;
+    height: 50px;
+    left: 5vw;
+    top: 1vh;
+}
+.goddess .link1{
+    width: 200px;
+    height: 50px;
+    right: 5vw;
+    top: 1vh;
+}
+
+/* garden */
+body.garden {
+    background-image: url(./images/garden.png);
+}
+.garden .link1{
+    width: 200px;
+    height: 50px;
+    left: 5vw;
+    top: 1vh;
+}
+.garden .link2{
+    width: 150px;
+    height: 50px;
+    left: 65vw;
+    top: 55vh;
+}
+.garden .link3{
+    width: 150px;
+    height: 50px;
+    left: 18vw;
+    top: 28vh;
+}
+
+/* eden */
+body.eden {
+    background-image: url(./images/eden.png);
+}
+
+.eden .link1{
+    width: 200px;
+    height: 50px;
+    left: 2vw;
+    top: 1vh;
+}
+.eden .link2{
+    width: 200px;
+    height: 50px;
+    right: 2vw;
+    top: 1vh;
+}
+.video{
+    position: fixed;
+    object-fit: fill;
+}
+.eden .video1{
+    width: 26%;
+    height: 25%;
+    right: 9vw;
+    top: 17vh;
+}
+.eden .video2{
+    width: 26%;
+    height: 25%;
+    left: 4vw;
+    top: 50vh;
+}
+
+
+/* god */
+
+body.god {
+    background-image: url(./images/god.png);
+}
+
+.god .link1{
+    width: 200px;
+    height: 50px;
+    left: 2vw;
+    top: 1vh;
+}
+.god .link2{
+    width: 200px;
+    height: 50px;
+    right: 2vw;
+    top: 1vh;
+}
+.god .video1{
+    width: 32.2%;
+    height: 31%;
+    right: 8.9vw;
+    top: 11vh;
+}
